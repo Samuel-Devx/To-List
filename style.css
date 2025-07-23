@@ -1,5 +1,7 @@
 * { padding: 0;
-    margin: 0;}
+    margin: 0;
+ box-sizing: border-box;
+}
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -11,12 +13,14 @@ body {
 
 main {
    background-color: #363635;
+    max-width: 90%;
    width: 400px;
    height: 400px;
    margin: auto;
    padding: 40px;
   border-radius: 15px;
   margin-top: 60px;
+ box-sizing: border-box;    
 }
 .texto-prc {
     color: white;
@@ -64,9 +68,10 @@ input {
     border-radius: 5px;
     height: 25px;
     color: white;
-    margin-left: 50px;
+    margin-left: 10%;
     margin-top: 10px;
     padding-left: 10PX;
+    width: 80%;
 }
 
 button
@@ -77,6 +82,8 @@ button
     padding: 4px;
     border: none;
     transition: all 0.5s ease;
+    margin-left: 60px;
+    margin-top: 10px;
 }
 button:hover {
     transform: scale(1.1);
@@ -91,6 +98,7 @@ button:hover {
     padding: 4px;
     border: none;
     transition: all 0.5s ease;
+    margin-top: 10px;
 }
 .remover:hover {
     transform: scale(1.1);
@@ -99,4 +107,23 @@ ul {
     margin-top: 10px;
     list-style: none;
     color: white;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+    }
+
+    input, button {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    .textotop {
+        font-size: 18px;
+    }
+
+    .tema {
+        margin-right: 10px;
+    }
 }
